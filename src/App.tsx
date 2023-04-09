@@ -6,7 +6,7 @@ export function App() {
   return (
     <ThemeProvider theme={defaultTheme}>
       <GlobalStyle/>
-      <h1>PROJETO BASE FUNCIONANDO...</h1>
+      <h1>WM Money</h1>
     </ThemeProvider>
   )
 }
