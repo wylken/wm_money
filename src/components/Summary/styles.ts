@@ -8,8 +8,8 @@ export const SummaryContainer = styled.div`
 
     margin-top: -5rem;
 
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: grid; //Para poder dividir a div como se fosse uma tabela
+    grid-template-columns: 1fr 1fr 1fr; //Informando que a div vai ter 3 colunas, todas com o mesmo tamanho
 `
 
 interface SummaryCardType{
@@ -32,6 +32,7 @@ export const SummaryCard = styled.div<SummaryCardType>`
         margin-top: 10px;
     }
 
+    //Se a existir a propriedade variant, retorna a propriedade background para o elemento
     ${props => props.variant && css`
         background-color: ${props.theme["blue-700"]};
     `}
