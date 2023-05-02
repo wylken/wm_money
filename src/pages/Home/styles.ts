@@ -24,7 +24,7 @@ export const TransactionTable = styled.table`
     width: 100%;
     border-collapse: separate; // habilita dar espaço entre as linhas da tabela
     border-spacing: 0 0.5rem; // setando o espaço entre a linhas, 0px para os lados e 0,5rem para cima e baixo
-
+    margin-top: 1rem;
     td{
         background-color: ${props=>props.theme["gray-600"]};
         padding: 1.25rem 2rem;
