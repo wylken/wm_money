@@ -17,18 +17,5 @@ export const HeaderContent = styled.div`
     align-items: center;
 `;
 
-export const NewTransactionButton = styled.button`
-    height: 50px;
-    border: 0;
-    background: ${props => props.theme['blue-500']};
-    border-radius: 5px;
-    color: ${props => props.theme.white};
-    padding: 0 1.25rem;
-    cursor: pointer;
 
-    &:hover{
-        transition: background-color 0.2s;
-        background-color: ${props => props.theme["blue-700"]};
-    }
-`;
 
