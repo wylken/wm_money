@@ -26,7 +26,7 @@ export const Overlay = styled(Dialog.Overlay)`
 `
 
 export const Content = styled(Dialog.Content)`
-    background: ${props => props.theme["gray-600"]};
+    background: ${props => props.theme["gray-800"]};
     min-width: 32rem;
     padding: 2.5rem 3rem;
     border-radius: 6px;
@@ -35,4 +35,47 @@ export const Content = styled(Dialog.Content)`
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    form{
+        display: flex;
+        flex-direction: column;
+        margin: 2rem 0rem;
+        gap: 1rem;
+
+        input{
+            padding: 0.75rem;
+            border-radius: 6px;
+            border: none;
+            background-color: ${props =>props.theme["gray-900"]};
+            color: ${props => props.theme["gray-300"]};
+        }
+        button[type="submit"]{
+            margin-top: 1rem;
+            padding: 1rem;
+            border: 0;
+            border-radius: 6px;
+            background-color: ${props => props.theme["green-500"]};
+            color: ${props => props.theme.white};
+
+            &:hover{
+                transition: background-color 0.2s;
+                background-color: ${props => props.theme["green-700"]};
+
+            }
+        }
+        
+    }
+
 `
+
+export const CloseButton = styled(Dialog.Close)`
+    position: absolute;
+    background: transparent;
+    border:0;
+    top: 1.5rem;
+    right: 1.5rem;
+    color: ${props => props.theme.white};
+    line-height: 0;
+    cursor: pointer;
+
+`;
